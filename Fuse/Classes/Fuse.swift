@@ -48,7 +48,7 @@ public class Fuse {
         )]
     )
     
-    fileprivate lazy var searchQueue: DispatchQueue = { [unowned self] in
+    public lazy var searchQueue: DispatchQueue = { [unowned self] in
         let label = "fuse.search.queue"
         return DispatchQueue(label: label, attributes: .concurrent)
         }()
